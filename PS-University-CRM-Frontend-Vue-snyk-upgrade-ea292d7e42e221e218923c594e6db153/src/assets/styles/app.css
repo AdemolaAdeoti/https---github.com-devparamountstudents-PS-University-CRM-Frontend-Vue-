@@ -1,0 +1,447 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.text-orange {
+    color: #F79009;
+}
+
+.inner-login {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    /* background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(51.68%, rgba(3, 3, 3, 0)), color-stop(100.72%, rgba(0, 0, 0, 0.72))), url("/src/assets/images/banner.png"); */
+    background-image: linear-gradient(360deg, #000000 0%, rgba(3, 3, 3, 0) 51.68%, rgba(0, 0, 0, 0.72) 100.72%);
+}
+
+/* .overlay {
+    position: relative;
+    height: 960px;
+    width:740px;
+    overflow: hidden;
+} */
+.banner {
+    width: 100%;    
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/images/banner.png");
+}
+
+.form {
+    width: 100%;
+    /* height: 760px; */
+    position: relative;
+    /* margin-top: 230px; */
+    z-index: 3 !important;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.verify-otp {
+    display: flex !important;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.forgot-password {
+    display: flex !important;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content {
+    z-index: -100;
+}
+
+.wrapper-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto !important;
+}
+
+
+.cmodal{
+  animation-duration: 0.07s;
+    animation-timing-function: linear;
+    animation-name: elasticZoomIn;
+}
+  /* CSS for modal appearance */
+@keyframes elasticZoomIn {
+
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  
+  80% {
+    transform: scale(1);
+
+  }
+  
+  100% {
+    opacity: .8;
+    /* transform: scale(1); */
+  }
+}
+
+/* CSS for modal disappearance */
+@keyframes elasticZoomOut {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  border-radius: 9px;
+  animation-duration: 0.15s;
+  animation-timing-function:linear;
+  animation-name: elasticZoomIn;
+}
+
+/*# sourceMappingURL=app.css.map */
+
+
+  /* Define padding classes for all breakpoints */
+  .pp-1 {
+    padding: 0.25rem;
+  }
+
+  .pp-2 {
+    padding: 0.5rem;
+  }
+
+  .pp-3 {
+    padding: 1rem;
+  }
+
+  .pp-4 {
+    padding: 1.5rem;
+  }
+
+  .pp-5 {
+    padding: 3rem;
+  }
+
+  .mm-1 {
+    padding: 0.25rem;
+  }
+
+  .mm-2 {
+    padding: 0.5rem;
+  }
+
+  .mm-3 {
+    padding: 1rem;
+  }
+
+  .mm-4 {
+    padding: 1.5rem;
+  }
+
+  .mm-5 {
+    padding: 3rem;
+  }
+  .pp {
+    padding: var(--pp, 0);
+  }
+
+  .mm {
+    margin: var(--mm, 0);
+  }
+
+  .hh {
+    height: var(--hh, 0);
+  }
+  .p-text-light{
+    color: #f8f8f8;
+  }
+  .p-text-dark{
+    color: rgb(33, 37, 41);
+  }
+  .tx { font-size: var(--tx, 0) !important; }
+  .ppx { padding-left: var(--ppx, 0) !important;  padding-right: var(--ppx, 0) !important; }
+  .ppx-1 { padding-left: 0.5rem;  padding-right: 0.5rem ; }
+  .ppx-2 { padding-left: 1.3rem;  padding-right: 1.3rem ; }
+  .ppx-3 { padding-left: 2rem;  padding-right: 2rem ; }
+  .ppx-4 { padding-left: 3.3rem;  padding-right: 3.3rem ; }
+  .ppx-5 { padding-left: 6rem;  padding-right: 6rem ; }
+  .mmx-1 { margin-left: 0.5rem;  margin-right: 0.5rem ; }
+  .mmx-2 { margin-left: 1.3rem;  margin-right: 1.3rem ; }
+  .mmx-3 { margin-left: 2rem;  margin-right: 2rem ; }
+  .mmx-4 { margin-left: 3.3rem;  margin-right: 3.3rem ; }
+  .mmx-5 { margin-left: 6rem;  margin-right: 6rem ; }
+.ppl { padding-left: var(--ppl, 0) !important; }
+.ppr { padding-right: var(--ppr, 0) !important; }
+.mmx { padding-left: var(--mmx, 0) !important;  padding-right: var(--mmx, 0) !important; }
+.mml { padding-left: var(--mml, 0) !important; }
+.mmr { padding-right: var(--mmr, 0) !important; }
+.dflex{display: flex;}
+.dblock{display: block;}
+.dinlineblock{display: inline-block;}
+.dinline{display: inline;}
+  /* Define responsive padding classes for all breakpoints */
+  @media  only screen and (max-width: 576px) {
+    .sm\:dflex{display: flex !important}
+    .sm\:dblock{display: block !important}
+    .sm\:dinlineblock{display: inline-block !important}
+    .sm\:dinline{display: inline !important}
+    .sm\:pp { padding: var(--sm-pp, 0) !important; }
+    .sm\:ppx { padding-left: var(--sm-ppx, 0) !important;  padding-right: var(--sm-ppx, 0) !important; }
+    .sm\:ppl { padding-left: var(--sm-ppl, 0) !important; }
+    .sm\:ppr { padding-right: var(--sm-ppr, 0) !important; }
+    .sm\:mmx { padding-left: var(--sm-mmx, 0) !important;  padding-right: var(--sm-mmx, 0) !important; }
+    .sm\:mml { padding-left: var(--sm-mml, 0) !important; }
+    .sm\:mmr { padding-right: var(--sm-mmr, 0) !important; }
+    .sm\:mm { margin: var(--mm-pp, 0) !important; }
+    .sm\:hh { height: var(--sm-hh, 0) !important; }
+    .sm\:text-light { color: #f8f8f8 !important; }
+    .sm\:text-dark { color: rgb(33, 37, 41) !important; }
+    .sm\:tx { font-size: var(--sm-tx, 0) !important; }
+    
+    .sm\:pp-1 {
+      padding: 0.25rem !important;
+    }
+
+    .sm\:pp-2 {
+      padding: 0.5rem !important;
+    }
+
+    .sm\:pp-3 {
+      padding: 1rem !important;
+    }
+
+    .sm\:pp-4 {
+      padding: 1.5rem !important;
+    }
+
+    .sm\:pp-5 {
+      padding: 3rem !important;
+    }
+
+    .sm\:mm-1 {
+      padding: 0.25rem !important;
+    }
+
+    .sm\:mm-2 {
+      padding: 0.5rem !important;
+    }
+
+    .sm\:mm-3 {
+      padding: 1rem !important;
+    }
+
+    .sm\:mm-4 {
+      padding: 1.5rem !important;
+    }
+
+    .sm\:mm-5 {
+      padding: 3rem !important;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {   
+    .md\:dflex{display: flex !important}
+    .md\:dblock{display: block !important}
+    .md\:dinlineblock{display: inline-block !important}
+    .md\:dinline{display: inline !important} 
+    .md\:pp { padding: var(--md-pp, 0) !important; }
+    .md\:ppx { padding-left: var(--md-ppx, 0) !important;  padding-right: var(--md-ppx, 0) !important; }
+    .md\:ppl { padding-left: var(--md-ppl, 0) !important; }
+    .md\:ppr { padding-right: var(--md-ppr, 0) !important; }
+    .md\:mmx { padding-left: var(--md-mmx, 0) !important;  padding-right: var(--md-mmx, 0) !important; }
+    .md\:mml { padding-left: var(--md-mml, 0) !important; }
+    .md\:mmr { padding-right: var(--md-mmr, 0) !important; }
+    .md\:mm { margin: var(--md-mm, 0) !important; }
+    .md\:hh { height: var(--md-hh, 0) !important; }
+    .md\:text-light { color: #f8f8f8 !important; }
+    .md\:text-dark { color: rgb(33, 37, 41) !important; }
+    .md\:tx { font-size: var(--md-tx, 0) !important; }
+
+    .md\:pp-1 {
+      padding: 0.25rem !important;
+    }
+
+    .md\:pp-2 {
+      padding: 0.5rem !important;
+    }
+
+    .md\:pp-3 {
+      padding: 1rem !important;
+    }
+
+    .md\:pp-4 {
+      padding: 1.5rem !important;
+    }
+
+    .md\:pp-5 {
+      padding: 3rem !important;
+    }
+
+    .md\:mm-1 {
+      padding: 0.25rem !important;
+    }
+
+    .md\:mm-2 {
+      padding: 0.5rem !important;
+    }
+
+    .md\:mm-3 {
+      padding: 1rem !important;
+    }
+
+    .md\:mm-4 {
+      padding: 1.5rem !important;
+    }
+
+    .md\:mm-5 {
+      padding: 3rem !important;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .lg\:dflex{display: flex !important}
+    .lg\:dblock{display: block !important}
+    .lg\:dinlineblock{display: inline-block !important}
+    .lg\:dinline{display: inline !important}
+    .lg\:pp { padding: var(--lg-pp, 0) !important; }
+    .lg\:ppx { padding-left: var(--lg-ppx, 0) !important;  padding-right: var(--lg-ppx, 0) !important; }
+    .lg\:ppl { padding-left: var(--lg-ppl, 0) !important; }
+    .lg\:ppr { padding-right: var(--lg-ppr, 0) !important; }
+    .lg\:mmx { padding-left: var(--lg-mmx, 0) !important;  padding-right: var(--lg-mmx, 0) !important; }
+    .lg\:mml { padding-left: var(--lg-mml, 0) !important; }
+    .lg\:mmr { padding-right: var(--lg-mmr, 0) !important; }
+    .lg\:mm { margin: var(--lg-mm, 0) !important; }
+    .lg\:hh { height: var(--lg-hh, 0) !important; }
+    .lg\:text-light { color: #f8f8f8 !important; }
+    .lg\:text-dark { color: rgb(33, 37, 41) !important; }
+    .lg\:tx { font-size: var(--lg-tx, 0) !important; }
+    .lg\:pp-1 {
+      padding: 0.25rem;
+    }
+
+    .lg\:pp-2 {
+      padding: 0.5rem !important;
+    }
+
+    .lg\:pp-3 {
+      padding: 1rem !important;
+    }
+
+    .lg\:pp-4 {
+      padding: 1.5rem !important;
+    }
+
+    .lg\:pp-5 {
+      padding: 3rem !important;
+    }
+
+    .lg\:mm-1 {
+      padding: 0.25rem !important;
+    }
+
+    .lg\:mm-2 {
+      padding: 0.5rem !important;
+    }
+
+    .lg\:mm-3 {
+      padding: 1rem !important;
+    }
+
+    .lg\:mm-4 {
+      padding: 1.5rem !important;
+    }
+
+    .lg\:mm-5 {
+      padding: 3rem !important;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    .xl\:dflex{display: flex !important}
+    .xl\:dblock{display: block !important}
+    .xl\:dinlineblock{display: inline-block !important}
+    .xl\:dinline{display: inline !important}
+    .xl\:pp { padding: var(--xl-pp, 0) !important; }
+    .xl\:ppx { padding-left: var(--xl-ppx, 0) !important;  padding-right: var(--xl-ppx, 0) !important; }
+    .xl\:ppl { padding-left: var(--xl-ppl, 0) !important; }
+    .xl\:ppr { padding-right: var(--xl-ppr, 0) !important; }
+    .xl\:mmx { padding-left: var(--xl-mmx, 0) !important;  padding-right: var(--xl-mmx, 0) !important; }
+    .xl\:mml { padding-left: var(--xl-mml, 0) !important; }
+    .xl\:mmr { padding-right: var(--xl-mmr, 0) !important; }
+    .xl\:mm { margin: var(--xl-mm, 0) !important;}
+    .xl\:hh { height: var(--xl-hh, 0) !important; }
+    .xl\:text-light { color: #f8f8f8 !important; }
+    .lg\:text-dark { color: rgb(33, 37, 41) !important; }
+    .lg\:tx { font-size: var(--lg-tx, 0) !important; }
+    .xl\:pp-1 {
+      padding: 0.25rem !important;
+    }
+
+    .xl\:pp-2 {
+      padding: 0.5rem !important;
+    }
+
+    .xl\:pp-3 {
+      padding: 1rem !important;
+    }
+
+    .xl\:pp-4 {
+      padding: 1.5rem !important;
+    }
+
+    .xl\:pp-5 {
+      padding: 3rem !important;
+    }
+
+    .xl\:mm-1 {
+      padding: 0.25rem !important;
+    }
+
+    .xl\:mm-2 {
+      padding: 0.5rem !important;
+    }
+
+    .xl\:mm-3 {
+      padding: 1rem !important;
+    }
+
+    .xl\:mm-4 {
+      padding: 1.5rem !important;
+    }
+
+    .xl\:mm-5 {
+      padding: 3rem !important;
+    }
+  }
+
+  

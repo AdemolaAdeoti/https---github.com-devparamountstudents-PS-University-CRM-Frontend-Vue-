@@ -1,0 +1,33 @@
+node {
+    stage('Checkout') {
+        // Checkout the repository from Git
+        git url: 'https://github.com/devparamountstudents/University-CRM-Frontend.git'
+    }
+    
+    stage('Build') {
+        // Run build commands specific to your frontend application
+        sh 'npm install'
+        sh 'npm run build'
+    }
+    
+    stage('Test') {
+        // Run tests specific to your frontend application
+        sh 'npm run test'
+    }
+    
+    stage('Docker Build and Push') {
+        // Build the Docker image and push it to the Docker registry
+        docker.withRegistry('https://your-docker-registry') {
+            def image = docker.build('AdminERP-:${env.BUILD_NUMBER}')
+            image.push()
+        }
+    }
+    
+    stage('Deploy') {
+        // Deploy the application to Kubernetes
+        // Apply the deployment, service, and ingress YAML files
+        sh 'kubectl apply -f kubernetes/deployment.yaml'
+        sh 'kubectl apply -f kubernetes/service.yaml'
+        sh 'kubectl apply -f kubernetes/ingress.yaml'
+    }
+}

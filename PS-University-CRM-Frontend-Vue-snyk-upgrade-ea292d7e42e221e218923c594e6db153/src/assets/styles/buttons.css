@@ -1,0 +1,106 @@
+.primary-btn {
+  background-color: #fac515;
+  color: #000;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.btn {
+  box-shadow: none !important;
+  outline: none;
+}
+
+.btn:disabled,
+.btn-disabled {
+  background-color: #eaecf0 !important;
+  color: #667085 !important;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: none;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #f79009;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+input,
+textarea {
+  border-radius: 8px !important;
+  padding: 10px, 14px, 10px, 14px !important;
+  box-shadow: none !important;
+  outline: #f79009 !important;
+}
+
+.vue-tel-input {
+  border-radius: 8px !important;
+  padding: 3px !important;
+  box-shadow: none !important;
+  outline: #f79009 !important;
+}
+
+.vti__dropdown-list {
+  width: 500px !important;
+}
+
+.vue-tel-input:focus-within {
+  outline: #f79009 !important;
+  border-color: #f79009 !important;
+}
+
+.otp-input {
+  border-radius: 8px !important;
+  padding: 10px 14px 10px 14px !important;
+  box-shadow: none !important;
+  outline: #f79009;
+  border: 1px solid #9da4ae;
+  margin-left: 8px;
+}
+
+.otp-input:focus {
+  border-radius: 8px !important;
+  padding: 10px 14px 10px 14px !important;
+  box-shadow: none !important;
+  outline: #f79009;
+  border: 1px solid #f79009;
+  margin-left: 8px;
+}
+
+.termsBtn {
+  background: #1d2939;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+}
+.adminBtn {
+  background: #1d2939;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+}
+.nav-pills {
+  padding: 10px;
+}
+.nav-pills:last-child {
+  margin-top: 1.5rem !important;
+}
+
+.termsBtn:hover {
+  background: #1d2939;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+}
+.adminBtn:hover {
+  background: #1d2939;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+}
+
+.adminBtn:last-child:hover {
+  background-color: transparent;
+  color: #000;
+}

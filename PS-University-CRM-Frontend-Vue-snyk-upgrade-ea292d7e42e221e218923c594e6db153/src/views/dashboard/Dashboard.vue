@@ -100,31 +100,6 @@
               alt="" height="24px"/>Help Support
           </h4>
         </div>
-        
-        <!-- Start of the help videos container -->
-        <div class="help-videos-container border-0 ">
-          <!-- Spacing and styling for the inner div -->
-          <div class="help-videos mt-4">
-            <!-- Looping through an array of numbers using Vue.js directive -->
-            <a v-for="num of [1, 2, 3, 4]" 
-               :key="num" 
-               class="border-0 mt-0 ms-0 ps-0 pt-0 d-flex items-center">
-              
-              <!-- Individual video item with margin on both sides -->
-              <div class="help-video m me-2">
-                
-                <!-- Play icon image with dynamic src attribute and fixed width -->
-                <img
-                  :src="require(`/src/assets/images/play_icon.png`)" 
-                  alt="" 
-                  style="width:24px" />
-                  
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- End of the help videos container -->
-        
       </div>
     </div>
   </div>

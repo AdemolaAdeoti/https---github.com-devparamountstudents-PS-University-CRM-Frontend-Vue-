@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+    <h2 class="text-center mb-5">University Central Management (UCM) FAQ</h2>
     <div class="faq-container mx-auto w-80">
       <SkeletalLoader v-show="faqsLoading" />
       <div v-for="(faq, index) in faqs" :key="index" class="position-relative">
@@ -9,6 +9,13 @@
         </h3>
         <p class="p-3 inactiveFAQ" v-html="convertYouTubeLinksToEmbedded(faq?.answer)" ></p>
       </div>
+      <div class="text-center mb-5">
+        <h3> 1. What is Paramount Students? </h3>
+        <p>Paramount Students is an online platform that connects high schools, universities, 
+          and students globally. It streamlines the process of international student recruitment 
+          and application for study abroad programs.
+        </p>
+    </div>
     </div>
     <h2 class="text-center mb-2 mt-5">
       <span lang="en" class="notranslate" translate="no"> Paramount Students </span> help guide in videos
